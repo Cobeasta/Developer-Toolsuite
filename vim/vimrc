@@ -1,0 +1,17 @@
+" Custom Vim configuration
+syntax enable " turn on syntax highlighting
+set hidden " Leave hidden buffers open
+set history=100 "by default vim saves last 8 commands, this saves more
+set number
+call plug#begin('~/.vim/plugged')
+Plug 'joshdick/onedark.vim'
+call plug#end()
+
+syntax on
+colorscheme onedark
+
+set tabstop=4
+set autoindent
+set softtabstop=4
+
+au BufNewFile,BufRead Jenkinsfile* setf groovy
