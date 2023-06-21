@@ -1,7 +1,8 @@
 #~/usr/bin/env bash
-source ./lib/config.sh
-source ./lib/utility.sh
-source ./lib/api/project.sh
+_ROOT=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+source $_ROOT/config.sh
+source $_ROOT/utility.sh
+source $_ROOT/api/project.sh
 
 
 function main() {

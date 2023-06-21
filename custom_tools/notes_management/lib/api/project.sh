@@ -7,7 +7,7 @@ function notes_project() {
 	local project_name=${1}
 	
 	mkdir -p "$_NOTES_FOLDER/$project_name" # init directory for project if not exists
-	vim "$_NOTES_FOLDER/$project_name/notes.md"
+	hx "$_NOTES_FOLDER/$project_name/notes.md"
 
 	return 0
 }

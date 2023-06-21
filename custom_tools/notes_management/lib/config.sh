@@ -14,6 +14,5 @@ trap exit TERM
 alias exit_script='kill -s TERM $$'
 
 # Set Script Globals
-_ROOT="$( cd "$(dirname "$0")" ; pwd -P )"
 _NOTES_FOLDER_NAME="work-notes"
 _NOTES_FOLDER="$HOME/$_NOTES_FOLDER_NAME"
