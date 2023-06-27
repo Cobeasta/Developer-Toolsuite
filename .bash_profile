@@ -1,7 +1,9 @@
 # Load Angular CLI autocompletion.
-source <(ng completion script)
 
+export EDITOR="/c/ProgramData/chocolatey/bin/hx"
 export CDPATH=.:~/development
+export PATH=$PATH:/~/binaries
+
 
 if [ -f /etc/bash_completion ]; then
 	. /etc/bash_completion
@@ -79,8 +81,7 @@ _comp_cd()
     return 0
 }
 complete -o filenames -o nospace -o bashdefault -F _comp_cd cd
-
-
-# source ~/bash_completion.d/git
-# source ~/bash_completion.d/docker
-
+alias hx=/c/ProgramData/chocolatey/bin/hx
+alias notes=~/personal/Developer-Toolsuite/custom_tools/notes_management/notes_command.sh
+alias groovy-lsp="java -jar ~/binaries/groovy-language-server-all.jar"
+eval $(thefuck --alias fuck)

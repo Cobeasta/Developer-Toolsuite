@@ -17,7 +17,7 @@ function main() {
 	# Parse commands into simple-indexed array for help messages
 	local commands="${!command_table[@]}"
 	local msg="usage: notes [ $commands ]" # typical help message
-	if [[ $# < 1 ]]; then exi_with_help "$msg"; fi
+	if [[ $# < 1 ]]; then exit_with_help "$msg"; fi
 
 	# load first argument as command then shift command off stack
 	local command=${1}; shift
