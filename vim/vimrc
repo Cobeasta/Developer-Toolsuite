@@ -5,6 +5,7 @@ set history=100 "by default vim saves last 8 commands, this saves more
 set number
 call plug#begin('~/.vim/plugged')
 Plug 'joshdick/onedark.vim'
+Plug 'dense-analysis/ale'
 call plug#end()
 
 syntax on
@@ -15,3 +16,4 @@ set autoindent
 set softtabstop=4
 
 au BufNewFile,BufRead Jenkinsfile* setf groovy
+source ~/.vim/ale.vim
